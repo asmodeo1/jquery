@@ -1,0 +1,83 @@
+
+[
+    {
+        "titulo": "Inception",
+        "año": 2010,
+        "director": "Christopher Nolan",
+        "actores": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+        "imagen": "https://m.media-amazon.com/images/I/51C8VjFj+SL._AC_.jpg",
+        "descripcion": "Un ladrón habilidoso, que roba secretos corporativos a través del uso de la tecnología de los sueños, es contratado para realizar una tarea casi imposible: implantar una idea en la mente de un CEO."
+    },
+    {
+        "titulo": "The Shawshank Redemption",
+        "año": 1994,
+        "director": "Frank Darabont",
+        "actores": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+        "imagen": "https://m.media-amazon.com/images/I/51NqjZy6iXL._AC_.jpg",
+        "descripcion": "Un hombre inocente es sentenciado a cadena perpetua en Shawshank, donde encuentra amistad con un preso veterano que lo ayuda a navegar por la brutal realidad de la vida en prisión."
+    },
+    {
+        "titulo": "The Godfather",
+        "año": 1972,
+        "director": "Francis Ford Coppola",
+        "actores": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "imagen": "https://m.media-amazon.com/images/I/51SPViEkQAL._AC_.jpg",
+        "descripcion": "Un relato épico sobre una familia criminal liderada por Don Vito Corleone, que lucha por mantener el equilibrio entre el negocio ilegal y la vida familiar en el Nueva York de los años 40."
+    },
+    {
+        "titulo": "The Dark Knight",
+        "año": 2008,
+        "director": "Christopher Nolan",
+        "actores": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+        "imagen": "https://m.media-amazon.com/images/I/71i8gJVjJkL._AC_SL1024_.jpg",
+        "descripcion": "Batman se enfrenta a su archienemigo, el Joker, quien desata el caos en Gotham City con sus criminales planes mientras el caballero oscuro intenta salvar la ciudad."
+    },
+    {
+        "titulo": "Pulp Fiction",
+        "año": 1994,
+        "director": "Quentin Tarantino",
+        "actores": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+        "imagen": "https://m.media-amazon.com/images/I/61GrzVrvWCL._AC_SY679_.jpg",
+        "descripcion": "Una serie de historias interconectadas sobre criminales, boxeadores, gánsteres y una misteriosa maleta que circulan por Los Ángeles, tejiendo una trama llena de violencia y humor negro."
+    },
+    {
+        "titulo": "Schindler's List",
+        "año": 1993,
+        "director": "Steven Spielberg",
+        "actores": ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
+        "imagen": "https://m.media-amazon.com/images/I/51wEeLeTg+L._AC_.jpg",
+        "descripcion": "La historia verdadera de Oskar Schindler, un empresario que salvó a más de mil judíos durante el Holocausto al emplearlos en sus fábricas durante la Segunda Guerra Mundial."
+    },
+    {
+        "titulo": "Fight Club",
+        "año": 1999,
+        "director": "David Fincher",
+        "actores": ["Brad Pitt", "Edward Norton", "Meat Loaf"],
+        "imagen": "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg",
+        "descripcion": "Un empleado insomne y un carismático vendedor de jabón forman un club secreto de lucha que se convierte en un movimiento violento y anárquico mientras exploran la verdadera esencia de la masculinidad."
+    },
+    {
+        "titulo": "Forrest Gump",
+        "año": 1994,
+        "director": "Robert Zemeckis",
+        "actores": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+        "imagen": "https://m.media-amazon.com/images/I/61bRLL-d0fL._AC_SL1200_.jpg",
+        "descripcion": "Forrest Gump, un hombre con un coeficiente intelectual bajo pero un corazón puro, vive una vida extraordinaria que lo lleva a través de momentos clave en la historia de Estados Unidos."
+    },
+    {
+        "titulo": "The Matrix",
+        "año": 1999,
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "actores": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+        "imagen": "https://m.media-amazon.com/images/I/71CJxk9wFkL._AC_SL1500_.jpg",
+        "descripcion": "Neo, un hacker informático, descubre la verdad sobre su existencia simulada y se une a la resistencia para derrocar a las máquinas que controlan la realidad humana."
+    },
+    {
+        "titulo": "The Lord of the Rings: The Fellowship of the Ring",
+        "año": 2001,
+        "director": "Peter Jackson",
+        "actores": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
+        "imagen": "https://m.media-amazon.com/images/I/81QMC4S6tIL._AC_SL1500_.jpg",
+        "descripcion": "Frodo Baggins, junto con un grupo de compañeros, se embarca en un viaje épico para destruir un anillo mágico y evitar que caiga en manos del malvado Sauron."
+    }
+]

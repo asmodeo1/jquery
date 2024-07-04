@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6</title>
+<style>
+</style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   
+</head>
+<body>
+    <input type="button" value="obtener Javascript" id="obtener">
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis et, aliquam, dolorum, mollitia dolore exercitationem nihil quis tempora sint minima explicabo. Quis libero iste unde quidem officiis inventore! Aut.</li>
+        <li>Iste, quisquam! Ex ut adipisci nemo natus iure nam architecto nobis quasi reprehenderit veniam rerum facilis ipsum, quaerat laboriosam reiciendis, libero accusamus consequuntur beatae sint. Obcaecati minus quos vel ratione.</li>
+        <li>Expedita error quam iste, magnam amet corrupti et est! Asperiores, dicta debitis voluptatum, quod fugiat deleniti excepturi accusantium nostrum deserunt exercitationem eos at assumenda provident! Aliquam cupiditate hic eligendi odit.</li>
+    </ul>
+
+    <script>
+        function obtenerDatos() {
+            $.getScript("ejemplo6.js")
+            .fail(() => alert("error"));
+        }
+
+        $("#obtener").on("click", obtenerDatos);
+    </script>
+</body>
+</html>

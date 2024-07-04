@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3</title>
+<style>
+</style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   
+</head>
+<body>
+    <input type="button" value="obtener" id="obtener">
+    <div id="contenedor">
+
+    </div>
+
+    <script>
+        $(document).ajaxSuccess(() => console.log("éxito"));
+        $(document).ajaxError((evt, xhr) => console.log("error: " + xhr.status));
+
+        function obtenerDatos() {
+            $("#contenedor").load("datos.htm");
+        }
+
+        $("#obtener").on("click", obtenerDatos);
+
+        //$("#obtener").on("click", () => $("#contenedor").load("datos.htm");));
+
+        /* Con JavaScrip puro"
+
+        function obtenerDatos() {
+            fetch("datos.htm")
+            .then(respuesta => respuesta.text())
+            .then(datos => document.getElementById("contenedor").innerHTML = datos)
+            .catch(() => console.log("error"));
+        }
+
+        document.getElementById("obtener").addEventListener("click", obtenerDatos);
+        */
+    </script>
+
+    
+</body>
+</html>

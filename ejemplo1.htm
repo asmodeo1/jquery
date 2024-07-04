@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+<style>
+    .fondo {
+        background-color: antiquewhite;
+    }
+</style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   
+</head>
+<body>
+    <h1 id="h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, et perferendis dignissimos omnis consequuntur voluptates accusantium ipsa asperiores veritatis. Laboriosam explicabo nihil commodi corporis ipsam ullam velit, vero vel deleniti.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, et perferendis dignissimos omnis consequuntur voluptates accusantium ipsa asperiores veritatis. Laboriosam explicabo nihil commodi corporis ipsam ullam velit, vero vel deleniti.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, et perferendis dignissimos omnis consequuntur voluptates accusantium ipsa asperiores veritatis. Laboriosam explicabo nihil commodi corporis ipsam ullam velit, vero vel deleniti.</h3>
+
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem asperiores nisi qui sunt inventore esse voluptate accusamus voluptates, ducimus aspernatur, quis natus a veniam quas quos ex omnis sapiente adipisci!</li>
+        <li>Pariatur culpa exercitationem illum quisquam, minus odit cumque eligendi hic aut itaque ea tempora impedit eum, magni vel veniam at quam rem modi voluptatibus fugit. Officia laboriosam illo id animi?</li>
+        <li>In fuga debitis porro dolorum sed. Nemo harum ipsa, nobis repellat natus nihil placeat excepturi, qui veniam aut odio accusamus quod dolore impedit consequatur fuga odit et ad id repudiandae.</li>
+        <li>Nam ullam laboriosam magnam, totam eos unde porro ipsa quos sint, voluptatem molestiae. Ut quas nesciunt est minima quibusdam, fugit quis quidem, neque odit quae pariatur consequuntur laborum odio voluptate.</li>
+    </ul>
+    <input type="button" value="copiar contenido lis" id="copiar">
+    <div id="copia"></div>
+
+    <script>
+        $("#h1")
+            .css("color", "red")
+            .css("border", "solid")
+            .addClass("fondo").text("Texto cambiado");
+        
+        $("ul li").css("color", "green");
+
+        $(":button").css({backgroundColor: "#541288", border: "none", color: "white"});
+        /* En JavaScript
+        const boton = document.querySelector("[type='button']");
+        boton.style.backgroundColor = "#541288";
+        boton.style.border = "none";
+        boton.style.color = "white";*/
+
+        // 3 es el cuarto pues el primero es el cero
+        $("li:eq(3)").css("text-transform", "uppercase");
+
+        $("ul:first li:gt(1)").css("font-style", "italic");
+
+        // Cambiamos todos los h
+        $(":header").css("margin-left", "30px");
+
+        $("li:first").css("font-weight", "bold");
+        // document.querySelector("li:first-of-type").style.fontWeight = "bold";
+
+
+        $("ul li").on("click", function () {$(this).css("color", "blue")});
+
+        $("ul li").on("click", function () {this.style.borderBottom = "solid"});
+
+        function copiar() {
+            const div = $("#copia");
+            div.text("");
+            $("li").each(function() { div.append($(this).clone())});
+            div.html(div.html() + "<hr>");
+        }
+
+        $("#copiar").on("click", copiar)
+
+        /* Lo de copiar sería en JavaScript normal */
+        /*function copiar2() {
+            const div = document.getElementById("copia");
+            div.textContent = "";
+            for (const li of document.getElementsByTagName("li")) {
+                div.appendChild(li.clone());
+            }
+            div.innerHTML += "<hr>";
+        }
+
+        document.getElementById("copiar").addEventListener("click", copiar2 );
+        */
+
+
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

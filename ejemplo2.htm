@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .ocultar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equipos</h1>
+    <h2>España</h2>
+    <ul class="ocultar">
+        <li>España 1</li>
+        <li>España 2</li>
+        <li>España 3</li>
+        <li>España 4</li>
+    </ul>
+    <h2>Portugal</h2>
+    <ul class="ocultar">
+        <li>Portugal 1</li>
+        <li>Portugal 2</li>
+        <li>Portugal 3</li>
+        <li>Portugal 4</li>
+    </ul>
+    <h2>Francia</h2>
+    <ul class="ocultar">
+        <li>Franca 1</li>
+        <li>Franca 2</li>
+        <li>Franca 3</li>
+        <li>Franca 4</li>
+    </ul>
+
+    <script>
+       /* Con Javascript puro
+       function mostrarOcultar(evt) {
+            evt.target.nextElementSibling.classList.toggle("ocultar");
+        }
+        document.querySelectorAll("h2").forEach( (e) => e.addEventListener("click", mostrarOcultar));
+        */
+
+        function mostrarOcultar(evt) {
+            // $(this) devuelve el elemento donde se produjo el evento
+            //$(this).next().toggleClass("ocultar");
+            $(this).next().fadeToggle();
+        }
+
+        $("h2").on("click", mostrarOcultar);
+
+    </script>
+</body>
+</html>
